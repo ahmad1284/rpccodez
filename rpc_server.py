@@ -8,9 +8,7 @@ def sum_of_two(x,y):
 
 if __name__ == '__main__':
     # initialize the server at localhost and port 8888
-    server = SimpleXMLRPCServer(('0.0.0.0',8888))
-    # register function
-    server.register_function(respon_string, "get_string")
+    server = SimpleXMLRPCServer(('localhost',8888))
     
     # register another function
     server.register_function(sum_of_two, "sum")
