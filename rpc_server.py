@@ -1,8 +1,6 @@
 from xmlrpc.server import SimpleXMLRPCServer
 
-def respon_string(str):
-    return "Here is your string: %s"%str
-
+# Define your function
 def sum_of_two(x,y):
     return x + y
 
